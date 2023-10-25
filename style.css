@@ -1,0 +1,18 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: 'Fira Mono', monospace;
+}
+
+p a {
+    display: block;
+}
+
+header {
+    background-color: #ff0000;
+    padding: 40px 80px;
+}
