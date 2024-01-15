@@ -1,0 +1,1 @@
+// Handles data fetching and rendering for the homepage.

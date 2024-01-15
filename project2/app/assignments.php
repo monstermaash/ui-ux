@@ -1,0 +1,1 @@
+<!-- Manages assignments, including fetching upcoming assignments and updating status. -->

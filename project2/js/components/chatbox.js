@@ -1,0 +1,1 @@
+// Component for managing the chat interface, sending, and receiving messages.

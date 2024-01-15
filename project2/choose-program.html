@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Lemon&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="choose-program">
+    <div class="container">
+
+      <img class="logo-register" loading="lazy" src="./assets/logo.png" />
+
+      <h2>Program</h2>
+      <p>Please select your program</p>
+
+      <form id="input-form" action="index.php" method="post">
+        <div class="form-group">
+          <label for="program">Program:</label>
+          <select name="program" required>
+            <option value="1">Front-End Development</option>
+            <option value="2">Back-End Development</option>
+            <option value="3">Fullstack Development</option>
+          </select>
+        </div>
+
+        <!-- <input type="submit" class="register-btn" onclick="submitForm()" value="Let's Go!"> -->
+
+        <!-- Add a hidden input to store the program value -->
+        <input type="hidden" name="program" id="hidden-program">
+        
+        <input type="submit" class="register-btn" onclick="submitForm()" value="Let's Go!">
+        <!-- <button class="register-btn" type="button" onclick="submitForm()">Let's Go!</button> -->
+        
+        <div class="registration-confirmation">
+          <img class="icon-confirmation" src="./assets/icon-confirmation.svg" alt="Confirmation Icon">
+        </div>
+        
+        <div class="choose-program-loading-screen"></div>
+      </form>
+
+    </div>
+  </div>
+
+  </body>
+  </html>
+
+
+  <script>
+    function submitForm() {
+      // Get the selected program value
+      var selectedProgram = document.querySelector('select[name="program"]').value;
+
+      // Set the value to the hidden input
+      document.getElementById('hidden-program').value = selectedProgram;
+
+      // Submit the form
+      document.getElementById('input-form').submit();
+    }
+  </script>
+
+  <script src="./js/functions.js"></script>
+  <script src="./js/pages/choose-program.js"></script>

@@ -1,0 +1,1 @@
+// Loads and displays student profile information.

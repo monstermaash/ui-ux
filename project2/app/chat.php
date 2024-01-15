@@ -1,0 +1,1 @@
+<!-- Processes chat actions like selecting a participant, checking chatroom, sending messages. -->

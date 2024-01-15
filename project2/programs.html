@@ -1,0 +1,131 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Lemon&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="programs">
+    <div class="container">
+
+      <h2>Programs</h2>
+
+      <article id="display"></article>
+      
+      <script src="./js/functions.js"></script>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Programs List</title>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Lemon&display=swap" rel="stylesheet">
+
+  <!-- bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/db5f45cc20.js" crossorigin="anonymous"></script>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container mt-5">
+
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="frontendHeading">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#frontendCollapse" aria-expanded="true"
+              aria-controls="frontendCollapse">
+              Front-end <i class="fas fa-chevron-down"></i>
+            </button>
+          </h5>
+        </div>
+
+        <div id="frontendCollapse" class="collapse show" aria-labelledby="frontendHeading" data-parent="#accordion">
+          <div class="card-body">
+            <p>Craft captivating user interfaces with courses like Web Creation & Design, Applied UX/UI and Dynamic Web
+            Programming. Your journey to shaping seamless digital experiences starts here.</p>
+            <img src="./assets/icon-frontend.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="backendHeading">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#backendCollapse"
+              aria-expanded="false" aria-controls="backendCollapse">
+              Back-end <i class="fas fa-chevron-down"></i>
+            </button>
+          </h5>
+        </div>
+
+        <div id="backendCollapse" class="collapse" aria-labelledby="backendHeading" data-parent="#accordion">
+          <div class="card-body">
+            <p>Master the engine behind web functionality through courses like Web Development Environment, Advanced Web
+            Programming, and Content Management System. Dive into server-side magic and database management.</p>
+            <img src="./assets/icon-backend.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="fullstackHeading">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#fullstackCollapse"
+              aria-expanded="false" aria-controls="fullstackCollapse">
+              Fullstack <i class="fas fa-chevron-down"></i>
+            </button>
+          </h5>
+        </div>
+
+        <div id="fullstackCollapse" class="collapse" aria-labelledby="fullstackHeading" data-parent="#accordion">
+          <div class="card-body">
+            <p>Become a web development maestro by combining Front-End and Back-End skills. From Content Management to
+            Dynamic Web Programming, our comprehensive courses prepare you for full-stack excellence.</p>
+            <img src="./assets/icon-fullstack.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <a class="register-btn" href="register.html">Register</a>
+    <a class="login-btn" href="login.html">I'm already a member</a>
+
+  </div>
+</body>
+
+</html>

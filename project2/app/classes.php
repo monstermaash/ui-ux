@@ -1,0 +1,1 @@
+<!-- Fetches class information, enrolled classes, and next class details. -->
